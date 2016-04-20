@@ -432,7 +432,9 @@ case $UBUNTU in
 	2)
 		apt -y --no-install-recommends install \
 			xserver-xorg-video-fbturbo \
-			kubuntu-desktop
+			kubuntu-desktop \
+			sddm \
+			kde-config-sddm
 		;;
 	3)
 		apt -y --no-install-recommends install \
