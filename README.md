@@ -1,5 +1,5 @@
 # pine64-ubuntu-gui
-Script to install a gui on Ubuntu in Pine A64
+This script will expand the rootfs partition to fill up the SD card and install a gui on Ubuntu in Pine A64
 
 To run this script, type:
 
