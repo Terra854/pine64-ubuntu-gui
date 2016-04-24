@@ -425,34 +425,166 @@ apt update
 
 case $UBUNTU in
 	1)
-		apt -y --no-install-recommends install \
+		apt -y install \
 			xserver-xorg-video-fbturbo \
-			ubuntu-desktop
+			ubuntu-desktop \
+			ubuntu-docs
 		;;
 	2)
-		apt -y --no-install-recommends install \
+		apt -y install \
 			xserver-xorg-video-fbturbo \
 			kubuntu-desktop \
+			kubuntu-docs \
 			sddm \
 			kde-config-sddm
 		;;
 	3)
-		apt -y --no-install-recommends install \
+		apt -y install \
 			xserver-xorg-video-fbturbo \
-			xubuntu-desktop
+			xubuntu-desktop \
+			xubuntu-docs
 		;;
 	4)
-		apt -y --no-install-recommends install \
+		apt -y install \
 			xserver-xorg-video-fbturbo \
-			lubuntu-desktop
+			lubuntu-artwork \
+			# lubuntu-desktop package is not available for arm64
+			# so this is a (very long) workaround for it
+			abiword \
+			alsamixergui \
+			apport-gtk \
+			audacious \
+			audacious-plugins \
+			blueman \
+			desktop-file-utils \
+			dmz-cursor-theme \
+			evince \
+			fcitx \
+			fcitx-config-gtk2 \
+			fcitx-frontend-gtk2 \
+			fcitx-ui-classic \
+			ffmpegthumbnailer \
+			file-roller \
+			firefox \
+			fonts-nanum \
+			fonts-noto-cjk \
+			galculator \
+			gdebi \
+			gnome-disk-utility \
+			gnome-keyring \
+			gnome-mplayer \
+			gnome-system-tools \
+			gnome-time-admin \
+			gnumeric \
+			gpicview \
+			gucharmap \
+			guvcview \
+			gvfs-backends \
+			gvfs-fuse \
+			hardinfo \
+			indicator-application-gtk2 \
+			language-selector-gnome \
+			leafpad \
+			libfm-modules \
+			libgtk2-perl \
+			libmtp-runtime \
+			light-locker \
+			light-locker-settings \
+			lightdm-gtk-greeter-settings \
+			lubuntu-default-session \
+			lubuntu-software-center \
+			lxappearance \
+			lxappearance-obconf \
+			lxinput \
+			lxlauncher \
+			lxpanel-indicator-applet-plugin \
+			lxrandr \
+			lxsession-default-apps \
+			lxsession-logout \
+			lxshortcut \
+			lxtask \
+			lxterminal \
+			mobile-broadband-provider-info \
+			modemmanager \
+			mtpaint \
+			network-manager-gnome \
+			ntp \
+			obconf \
+			pidgin \
+			pinentry-gtk2 \
+			pm-utils \
+			python3-aptdaemon.pkcompat \
+			scrot \
+			simple-scan \
+			software-properties-gtk \
+			sylpheed \
+			sylpheed-doc \
+			sylpheed-i18n \
+			sylpheed-plugins \
+			synaptic \
+			system-config-printer-gnome \
+			transmission \
+			ubuntu-release-upgrader-gtk \
+			update-notifier \
+			usb-modeswitch \
+			whoopsie \
+			wvdial \
+			x11-utils \
+			xdg-user-dirs \
+			xdg-user-dirs-gtk \
+			xfburn \
+			xfce4-notifyd \
+			xfce4-power-manager \
+			xfce4-power-manager-plugins \
+			xpad \
+			xul-ext-ubufox \
+			xz-utils \
+			# lubuntu-core package is not available for arm64
+			# so this is a (very long) workaround for it
+			alsa-base \
+			alsa-utils \
+			anacron \
+			bc \
+			ca-certificates \
+			dbus-x11 \
+			fonts-dejavu-core \
+			fonts-freefont-ttf \
+			foomatic-db-compressed-ppds \
+			genisoimage \
+			ghostscript-x \
+			inputattach \
+			libsasl2-modules \
+			lightdm \
+			lightdm-gtk-greeter \
+			lubuntu-artwork \
+			lubuntu-default-settings \
+			lxpanel \
+			lxsession \
+			openbox \
+			openprinting-ppds \
+			pcmanfm \
+			plymouth-theme-lubuntu-logo \
+			plymouth-theme-lubuntu-text \
+			printer-driver-pnm2ppa \
+			rfkill \
+			ubuntu-drivers-common \
+			unzip \
+			wireless-tools \
+			wpasupplicant \
+			xkb-data \
+			xorg \
+			xserver-xorg-input-all \
+			xserver-xorg-video-all \
+			zip
 		;;
 	5)
-		apt -y --no-install-recommends install \
+		apt -y install \
 			xserver-xorg-video-fbturbo \
-			ubuntu-gnome-desktop
+			ubuntu-gnome-desktop \
+			ubuntu-gnome-default-settings
 		;;
 	6)
-		apt -y --no-install-recommends install \
+		apt -y install \
 			xserver-xorg-video-fbturbo \
 			ubuntu-mate-core \
 			ubuntu-mate-desktop \
@@ -461,7 +593,7 @@ case $UBUNTU in
 			lightdm
 		;;
 	7)
-		apt -y --no-install-recommends install \
+		apt -y install \
 			ubuntustudio-desktop \
 			ubuntustudio-audio \
 			ubuntustudio-audio-plugins \
