@@ -361,6 +361,11 @@ option_no_7() {
 
 set -e
 
+if [ "$(id -u)" -ne "0" ]; then
+	echo "This script requires root."
+	exit 1
+fi
+
 step_1
 	
 case $UBUNTU in
