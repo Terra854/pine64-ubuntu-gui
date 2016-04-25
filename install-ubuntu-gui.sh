@@ -616,6 +616,10 @@ if [ -e "/etc/modules-load.d/cups-filters.conf" ]; then
 	echo "" >/etc/modules-load.d/cups-filters.conf
 fi
 
+# Fix all issues in the Pine64 Ubuntu image
+
+bash <(curl -s https://raw.githubusercontent.com/longsleep/build-pine64-image/master/simpleimage/platform-scripts/pine64_fix_whatever.sh)
+
 clear
 
 echo "###########################################################################"
