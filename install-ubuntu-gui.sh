@@ -432,12 +432,18 @@ case $UBUNTU in
 	1)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			libvdpau-sunxi \
+			libump \
+			libcedrus \
 			ubuntu-desktop \
 			ubuntu-docs
 		;;
 	2)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			libvdpau-sunxi \
+			libump \
+			libcedrus \
 			kubuntu-desktop \
 			kubuntu-docs \
 			sddm \
@@ -446,13 +452,18 @@ case $UBUNTU in
 	3)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			libvdpau-sunxi \
+			libump \
+			libcedrus \
 			xubuntu-desktop \
 			xubuntu-docs
 		;;
 	4)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
-			lubuntu-artwork \
+			libvdpau-sunxi \
+			libump \
+			libcedrus \
 			# lubuntu-desktop package is not available for arm64
 			# so this is a (very long) workaround for it
 			abiword \
@@ -581,16 +592,60 @@ case $UBUNTU in
 			xserver-xorg-input-all \
 			xserver-xorg-video-all \
 			zip
+			# Recommended packages for lubuntu-core
+			avahi-daemon \
+			bluez \
+			bluez-cups \
+			cups \
+			cups-bsd \
+			cups-client \
+			cups-filters \
+			fonts-guru \
+			fonts-kacst-one \
+			fonts-khmeros-core \
+			fonts-lao \
+			fonts-lklug-sinhala \
+			fonts-sil-abyssinica \
+			fonts-sil-padauk \
+			fonts-takao-pgothic \
+			fonts-thai-tlwg \
+			fonts-tibetan-machine \
+			fwupd \
+			fwupdate \
+			fwupdate-signed \
+			hplip \
+			kerneloops-daemon \
+			laptop-detect \
+			libnss-mdns \
+			pcmciautils \
+			policykit-desktop-privileges \
+			printer-driver-brlaser \
+			printer-driver-c2esp \
+			printer-driver-foo2zjs \
+			printer-driver-min12xxw \
+			printer-driver-ptouch \
+			printer-driver-pxljr \
+			printer-driver-sag-gdi \
+			printer-driver-splix \
+			snapd \
+			ttf-ancient-fonts-symbola \
+			ttf-ubuntu-font-family \
 		;;
 	5)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			libvdpau-sunxi \
+			libump \
+			libcedrus \
 			ubuntu-gnome-desktop \
 			ubuntu-gnome-default-settings
 		;;
 	6)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			libvdpau-sunxi \
+			libump \
+			libcedrus \
 			ubuntu-mate-core \
 			ubuntu-mate-desktop \
 			ubuntu-mate-lightdm-theme \
@@ -599,6 +654,10 @@ case $UBUNTU in
 		;;
 	7)
 		apt -y install \
+			xserver-xorg-video-fbturbo \
+			libvdpau-sunxi \
+			libump \
+			libcedrus \
 			ubuntustudio-desktop \
 			ubuntustudio-audio \
 			ubuntustudio-audio-plugins \
