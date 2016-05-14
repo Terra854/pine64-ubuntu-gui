@@ -432,6 +432,7 @@ case $UBUNTU in
 	1)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			sunxi-disp-tool \
 			libvdpau-sunxi \
 			libump \
 			libcedrus \
@@ -441,6 +442,7 @@ case $UBUNTU in
 	2)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			sunxi-disp-tool \
 			libvdpau-sunxi \
 			libump \
 			libcedrus \
@@ -452,6 +454,7 @@ case $UBUNTU in
 	3)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			sunxi-disp-tool \
 			libvdpau-sunxi \
 			libump \
 			libcedrus \
@@ -461,6 +464,7 @@ case $UBUNTU in
 	4)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			sunxi-disp-tool \
 			libvdpau-sunxi \
 			libump \
 			libcedrus \
@@ -634,6 +638,7 @@ case $UBUNTU in
 	5)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			sunxi-disp-tool \
 			libvdpau-sunxi \
 			libump \
 			libcedrus \
@@ -643,6 +648,7 @@ case $UBUNTU in
 	6)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			sunxi-disp-tool \
 			libvdpau-sunxi \
 			libump \
 			libcedrus \
@@ -655,6 +661,7 @@ case $UBUNTU in
 	7)
 		apt -y install \
 			xserver-xorg-video-fbturbo \
+			sunxi-disp-tool \
 			libvdpau-sunxi \
 			libump \
 			libcedrus \
